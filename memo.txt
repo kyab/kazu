@@ -1,0 +1,14 @@
+■NOOBSをすっ飛ばす
+
+RECOVERYパーティションにautoboot.txtを作って、
+boot_partition=6
+を記載。
+下リンクではboot_partition=5だったが、場合によって違うらしい、、
+http://akkiesoft.hatenablog.jp/entry/20150925/1443151186
+
+■自動起動
+/etc/rc.localのexit 0の直前に記載
+実行パスが多分違うので注意
+
+/etc/profileでも良いが、SSHログインの度に実行されてしまう。
+
